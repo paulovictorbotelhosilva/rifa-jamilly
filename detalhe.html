@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Detalhe - Rifa Jamilly</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Playfair+Display:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <main class="container">
+      <a class="back-link" href="index.html">← Voltar para todos os números</a>
+
+      <section class="detail-grid">
+        <article class="card">
+          <h2 class="section-title">Informações da Rifa</h2>
+          <p><strong>Nome:</strong> Rifa Jamilly</p>
+          <p><strong>Prêmio:</strong> Cesta especial com itens personalizados.</p>
+          <p><strong>Data do sorteio:</strong> 30/08/2026</p>
+          <p><strong>Valor por número:</strong> R$ 10,00</p>
+
+          <ul class="list">
+            <li>Escolha um número disponível.</li>
+            <li>Envie o comprovante do PIX após reservar.</li>
+            <li>O sorteio será realizado ao vivo no Instagram.</li>
+          </ul>
+
+          <div class="pix-box">
+            <span class="pix-key">Chave PIX: <strong id="pix-key">98984614936</strong></span>
+            <button class="btn btn-outline" id="copy-pix" type="button">📋 Copiar PIX</button>
+          </div>
+        </article>
+
+        <aside class="card">
+          <h2 class="section-title">Número Selecionado</h2>
+          <div id="selected-number" class="number-display">--</div>
+          <div id="status-badge" class="badge">Status</div>
+
+          <p id="reserved-by" class="notice hidden"></p>
+
+          <a
+            id="whatsapp-button"
+            class="btn btn-success"
+            href="#"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            💬 Reservar via WhatsApp
+          </a>
+          <button id="whatsapp-disabled" class="btn btn-disabled hidden" type="button" disabled>
+            💬 Reservar via WhatsApp
+          </button>
+          <p id="reserved-message" class="notice hidden">Este número já foi reservado 💛</p>
+        </aside>
+      </section>
+    </main>
+
+    <script src="js/detalhe.js" defer></script>
+  </body>
+</html>
