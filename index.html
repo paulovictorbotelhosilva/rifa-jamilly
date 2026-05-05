@@ -3,176 +3,29 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Rifa Airfryer – Paulo Victor e Jamilly</title>
+    <title>Rifa Jamilly</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Pacifico&family=Poppins:wght@400;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Playfair+Display:wght@600;700&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <!-- ===== HEADER ===== -->
-    <header class="site-header">
-      <span class="heart heart-1">♡</span>
-      <span class="heart heart-2">♡</span>
-      <span class="heart heart-3">♡</span>
-      <span class="heart heart-4">♡</span>
-      <span class="heart heart-5">♡</span>
-      <span class="heart heart-6">♡</span>
-
-      <div class="header-inner">
-        <span class="header-ticket" aria-hidden="true">🎟️</span>
-        <h1>RIFA – AIRFRYER</h1>
-        <p class="header-subtitle">Paulo Victor e Jamilly</p>
+    <main class="container">
+      <header class="header">
+        <h1>🎟️ Rifa Jamilly</h1>
+        <p>Concorra a um prêmio especial e ajude a realizar um sonho!</p>
         <div class="counter" aria-live="polite">
-          <span id="available-count">0</span>&nbsp;disponíveis &nbsp;·&nbsp;
-          <span id="reserved-count">0</span>&nbsp;reservados
+          <span id="available-count">0</span> disponíveis ·
+          <span id="reserved-count">0</span> reservados
         </div>
-      </div>
-    </header>
+      </header>
 
-    <!-- ===== CONTEÚDO PRINCIPAL ===== -->
-    <div class="main-layout">
-
-      <!-- Coluna esquerda: cards informativos -->
-      <aside class="info-column" aria-label="Informações da rifa">
-
-        <!-- Card convite -->
-        <div class="info-card card-convite">
-          <span class="info-card-icon" aria-hidden="true">💌</span>
-          <div class="info-card-body">
-            <p class="info-card-title">Convite</p>
-            <p class="info-card-text">
-              Convidamos você a participar da nossa rifa cujo objetivo é ajudar a mobiliar nossa casa nova.
-            </p>
-          </div>
-        </div>
-
-        <!-- Card prêmio -->
-        <div class="info-card card-premio">
-          <span class="info-card-icon" aria-hidden="true">🎁</span>
-          <div class="info-card-body">
-            <p class="info-card-title">Prêmio</p>
-            <p class="info-card-text">
-              <strong>1 Airfryer</strong>
-              Concorra a uma airfryer e ajude a realizar nosso sonho!
-            </p>
-          </div>
-        </div>
-
-        <!-- Card valor -->
-        <div class="info-card card-valor">
-          <span class="info-card-icon" aria-hidden="true">💵</span>
-          <div class="info-card-body">
-            <p class="info-card-title">Valor por número</p>
-            <p class="info-card-text"><strong>R$ 20,00</strong></p>
-          </div>
-        </div>
-
-        <!-- Card números -->
-        <div class="info-card card-numeros">
-          <span class="info-card-icon" aria-hidden="true">🔢</span>
-          <div class="info-card-body">
-            <p class="info-card-title">Numeração</p>
-            <p class="info-card-text"><strong>01 a 100</strong></p>
-          </div>
-        </div>
-
-        <!-- Card regras -->
-        <div class="info-card card-regras">
-          <span class="info-card-icon" aria-hidden="true">📢</span>
-          <div class="info-card-body">
-            <p class="info-card-title">Regra do sorteio</p>
-            <p class="info-card-text">
-              O sorteio será realizado quando todos os números forem vendidos.
-            </p>
-          </div>
-        </div>
-
-        <!-- Card PIX -->
-        <div class="info-card card-pix">
-          <div class="pix-header">
-            <span class="info-card-icon" aria-hidden="true">💸</span>
-            <div>
-              <p class="info-card-title">Pagamento via PIX</p>
-              <p class="info-card-text">Após reservar, realize o pagamento.</p>
-            </div>
-          </div>
-          <div class="pix-details">
-            <div class="pix-field">
-              <span>Chave PIX:</span>
-              <strong id="pix-key-index">98984614936</strong>
-            </div>
-            <div class="pix-field">
-              <span>Nome:</span>
-              <strong>Jamilly Nascimento Aguiar</strong>
-            </div>
-            <button class="btn-copy-pix" id="copy-pix-index" type="button">
-              📋 Copiar chave PIX
-            </button>
-          </div>
-        </div>
-
-        <!-- Card WhatsApp -->
-        <div class="info-card card-whats">
-          <span class="info-card-icon" aria-hidden="true">💬</span>
-          <div class="info-card-body">
-            <p class="info-card-title">Enviar comprovante</p>
-            <p class="info-card-text">
-              Após o pagamento, envie o comprovante pelo WhatsApp:
-              <strong>(98) 98461-4936</strong>
-            </p>
-          </div>
-        </div>
-
-        <!-- Rodapé decorativo -->
-        <div class="info-footer" aria-hidden="true">
-          <p class="info-footer-text">Contamos com sua participação!</p>
-          <p class="info-footer-deco">✦ ♡ ★ ♡ ✦</p>
-        </div>
-
-      </aside>
-
-      <!-- Coluna direita: grade de números -->
-      <section class="numbers-column" aria-label="Lista de números da rifa">
-        <div class="numbers-section-header">
-          <span class="deco-line" aria-hidden="true"></span>
-          <h2>LISTA DE NÚMEROS</h2>
-          <span class="deco-line" aria-hidden="true"></span>
-        </div>
-        <div class="numbers-grid-wrapper">
-          <div class="numbers-grid" id="numbers-grid"></div>
-          <div class="grid-legend" aria-hidden="true">
-            <span class="legend-item">
-              <span class="legend-dot available"></span> Disponível
-            </span>
-            <span class="legend-item">
-              <span class="legend-dot reserved"></span> Reservado
-            </span>
-          </div>
-        </div>
-      </section>
-
-    </div>
+      <section class="numbers-grid" id="numbers-grid" aria-label="Lista de números"></section>
+    </main>
 
     <script src="js/index.js" defer></script>
-    <script>
-      const copyPixIndexBtn = document.getElementById('copy-pix-index');
-      const pixKeyIndexEl = document.getElementById('pix-key-index');
-      if (copyPixIndexBtn && pixKeyIndexEl) {
-        copyPixIndexBtn.addEventListener('click', async () => {
-          try {
-            await navigator.clipboard.writeText(pixKeyIndexEl.textContent.trim());
-            const original = copyPixIndexBtn.textContent;
-            copyPixIndexBtn.textContent = '✅ Copiado!';
-            setTimeout(() => { copyPixIndexBtn.textContent = original; }, 2000);
-          } catch {
-            alert('Não foi possível copiar automaticamente. Copie manualmente: ' + pixKeyIndexEl.textContent.trim());
-          }
-        });
-      }
-    </script>
   </body>
 </html>
