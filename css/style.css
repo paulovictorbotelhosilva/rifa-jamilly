@@ -181,7 +181,7 @@ a {
 }
 
 .info-card-title {
-  font-size: 0.72rem;
+  font-size: 0.75rem;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.06em;
@@ -416,7 +416,7 @@ a {
   position: absolute;
   top: 4px;
   right: 6px;
-  font-size: 0.65rem;
+  font-size: 0.75rem;
 }
 
 .number-card:disabled {
@@ -429,7 +429,7 @@ a {
   gap: 16px;
   flex-wrap: wrap;
   margin-top: 14px;
-  font-size: 0.82rem;
+  font-size: 0.875rem;
   color: var(--texto-suave);
 }
 

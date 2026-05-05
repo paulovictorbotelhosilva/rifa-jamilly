@@ -169,7 +169,7 @@
             copyPixIndexBtn.textContent = '✅ Copiado!';
             setTimeout(() => { copyPixIndexBtn.textContent = original; }, 2000);
           } catch {
-            alert('Não foi possível copiar a chave PIX.');
+            alert('Não foi possível copiar automaticamente. Copie manualmente: ' + pixKeyIndexEl.textContent.trim());
           }
         });
       }
