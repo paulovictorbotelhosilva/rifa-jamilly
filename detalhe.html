@@ -3,40 +3,70 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Detalhe - Rifa Jamilly</title>
+    <title>Reservar Número – Rifa Airfryer</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Playfair+Display:wght@600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Pacifico&family=Poppins:wght@400;600;700&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
+    <!-- Mini header -->
+    <header class="site-header" style="padding-bottom: 48px;">
+      <span class="heart heart-1">♡</span>
+      <span class="heart heart-3">♡</span>
+      <span class="heart heart-4">♡</span>
+      <div class="header-inner">
+        <span class="header-ticket" aria-hidden="true">🎟️</span>
+        <h1 style="font-size: clamp(1.8rem, 5vw, 2.8rem);">RIFA – AIRFRYER</h1>
+        <p class="header-subtitle" style="font-size: 1rem; margin-bottom: 0;">Paulo Victor e Jamilly</p>
+      </div>
+    </header>
+
     <main class="container">
       <a class="back-link" href="index.html">← Voltar para todos os números</a>
 
       <section class="detail-grid">
+        <!-- Card informações -->
         <article class="card">
           <h2 class="section-title">Informações da Rifa</h2>
-          <p><strong>Nome:</strong> Rifa Jamilly</p>
-          <p><strong>Prêmio:</strong> Cesta especial com itens personalizados.</p>
-          <p><strong>Data do sorteio:</strong> 30/08/2026</p>
-          <p><strong>Valor por número:</strong> R$ 10,00</p>
+
+          <div class="detail-info-row">
+            <strong>🎁 Prêmio:</strong>
+            <span>1 Airfryer</span>
+          </div>
+          <div class="detail-info-row">
+            <strong>💵 Valor:</strong>
+            <span>R$ 20,00 por número</span>
+          </div>
+          <div class="detail-info-row">
+            <strong>🔢 Numeração:</strong>
+            <span>01 a 100</span>
+          </div>
 
           <ul class="list">
-            <li>Escolha um número disponível.</li>
-            <li>Envie o comprovante do PIX após reservar.</li>
-            <li>O sorteio será realizado ao vivo no Instagram.</li>
+            <li>Escolha um número disponível e clique para reservar.</li>
+            <li>Realize o pagamento via PIX para Jamilly Nascimento Aguiar.</li>
+            <li>Envie o comprovante pelo WhatsApp após o pagamento.</li>
+            <li>O sorteio ocorrerá quando todos os números forem vendidos.</li>
           </ul>
 
           <div class="pix-box">
-            <span class="pix-key">Chave PIX: <strong id="pix-key">98984614936</strong></span>
-            <button class="btn btn-outline" id="copy-pix" type="button">📋 Copiar PIX</button>
+            <p class="pix-box-label">💸 Pagamento via PIX</p>
+            <p class="pix-key" id="pix-key">98984614936</p>
+            <p style="font-size:0.85rem; color: var(--texto-suave); margin-top:4px;">
+              Nome: <strong>Jamilly Nascimento Aguiar</strong>
+            </p>
+            <button class="btn btn-outline" id="copy-pix" type="button" style="margin-top:12px;">
+              📋 Copiar chave PIX
+            </button>
           </div>
         </article>
 
-        <aside class="card">
+        <!-- Card número selecionado -->
+        <aside class="card" style="text-align: center;">
           <h2 class="section-title">Número Selecionado</h2>
           <div id="selected-number" class="number-display">--</div>
           <div id="status-badge" class="badge">Status</div>
@@ -53,7 +83,7 @@
             💬 Reservar via WhatsApp
           </a>
           <button id="whatsapp-disabled" class="btn btn-disabled hidden" type="button" disabled>
-            💬 Reservar via WhatsApp
+            💬 Já reservado
           </button>
           <p id="reserved-message" class="notice hidden">Este número já foi reservado 💛</p>
         </aside>
